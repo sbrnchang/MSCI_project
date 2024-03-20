@@ -1,3 +1,9 @@
+# TransTesselate2D for snow depth and sea ice thickness retrievals
+This code is the basis for the MSci Physics Project.
+
+Original code is by: Hawkins R., Bodin T., Sambridge M., Choblet G. and Husson L., "Trans-dimensional surface reconstruction with different classes of parameterization", Geochemistry, Geophysics, Geosystems, 2019
+
+See documentation/manual.tex Latex file for the original tutorial/manual on how to run and customize the code.
 
 # Compilation
 
@@ -25,5 +31,14 @@ And then run the inversion using:
 ```
 > python InversionBinnedParallel.py
 ```
+
+If error during make try 
+
+> make clean
+
+
+Validation plots with Operation Ice Bridge are in Jupyter Notebooks of each model labelled OIB.ipynb
+Mapping of inversion plots are in each Jupyter Notebooks of each model mapping.ipynb 
+
 
 
