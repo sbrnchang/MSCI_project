@@ -1,0 +1,4 @@
+prior Gaussian
+0 0.5
+proposal Gaussian
+0.01
