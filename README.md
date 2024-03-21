@@ -33,12 +33,16 @@ And then run the inversion using:
 ```
 
 If error during make try 
-
+``` 
 > make clean
+> make
+```
 
 
-Validation plots with Operation Ice Bridge are in Jupyter Notebooks of each model labelled OIB.ipynb
-Mapping of inversion plots are in each Jupyter Notebooks of each model mapping.ipynb 
+Validation plots with Operation Ice Bridge are in Jupyter Notebooks of each model labelled 'OIB.ipynb'
+Mapping of inversion plots are in each Jupyter Notebooks of each model 'mapping.ipynb'
+
+
 
 
 
