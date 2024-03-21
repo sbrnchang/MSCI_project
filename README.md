@@ -3,7 +3,7 @@ This code is the basis for the MSci Physics Project.
 
 Original code is by: Hawkins R., Bodin T., Sambridge M., Choblet G. and Husson L., "Trans-dimensional surface reconstruction with different classes of parameterization", Geochemistry, Geophysics, Geosystems, 2019
 
-See documentation/manual.tex Latex file for the original tutorial/manual on how to run and customize the code.
+See documentation/manual.tex Latex file for the original tutorial/manual on how to customize the code.
 
 # Compilation
 
@@ -27,22 +27,30 @@ Inside of the `snow_ice` folder there are a few models that can be used. In orde
 > make
 ```
 
-And then run the inversion using:
-```
-> python InversionBinnedParallel.py
-```
-
 If error during make try 
 ``` 
 > make clean
 > make
 ```
+Each model is set with Voronoi cell, for 4 chains. 2p models run for roughly one hour. 
 
+To run the inversion:
+```
+> python InversionBinnedParallel.py
+```
 
-Validation plots with Operation Ice Bridge are in Jupyter Notebooks of each model labelled 'OIB.ipynb'
-Mapping of inversion plots are in each Jupyter Notebooks of each model 'mapping.ipynb'
+After inversion:
+Validation plots with Operation Ice Bridge are in Jupyter Notebooks of each model labelled `OIB.ipynb`
+Mapping of inversion plots are in each Jupyter Notebooks of each model `mapping.ipynb`
 
+## Synthetic simulations
 
+In `synthetic`:
 
+`acceptance_tests` and `initial_prior_test` are used for simple synthetic case to test how sensitive the software is with different parameters.
+
+`realistic_simulation` is for synthetic case at the Arctic.
+
+in each folder, run tests in `SyntheticTest.ipynb` and analysis, including acceptance rate in `Analysis.ipynb`.
 
 
