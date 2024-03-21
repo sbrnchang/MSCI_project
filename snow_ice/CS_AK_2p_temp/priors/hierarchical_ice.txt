@@ -1,4 +1,0 @@
-prior Jeffreys
-0.01 10.0
-proposal LogGaussian
-0.05
