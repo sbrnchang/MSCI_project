@@ -56,7 +56,7 @@ def main(
     initial_cells = 10,
     iterations_number = 200000,
     verbosity = 5000,
-    independent_chains = 6,
+    independent_chains = 4,
     temperature_levels = 1,
     maximum_temperature = 2.0,
     iterations_between_tempering_attempts = 10,
