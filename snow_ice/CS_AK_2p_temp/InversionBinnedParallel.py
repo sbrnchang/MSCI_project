@@ -9,7 +9,6 @@ import pandas as pd
 import subprocess
 import matplotlib.pyplot as plt
 from itertools import chain
-from mpl_toolkits.basemap import Basemap
 import os
 import warnings
 import netCDF4 as nc

@@ -1,15 +1,12 @@
 '''
-The objective of this program is to provide the entire pipeline from directly consuming CPOM 
-data and directly producing plots with the results. 
+The objective of this program is to provide the entire pipeline from directly consuming freeboard data 
 
-This time including support for multi-threading.
 '''
 import numpy as np
 import pandas as pd
 import subprocess
 import matplotlib.pyplot as plt
 from itertools import chain
-from mpl_toolkits.basemap import Basemap
 import os
 import warnings
 
@@ -47,13 +44,13 @@ fb_path1 = "../carmen/daily_numpys/AK_CPOM/FB_interp_2016-2017_25km_20170309.npy
 fb_path2 = "../carmen/daily_numpys/CS2_CPOM/FB_interp_2016-2017_25km_20170309.npy"
 '''
 def main(
-    fb_path1 = "../carmen/daily_numpys/AK_CPOM/FB_interp_2018-2019_25km_20190422.npy",
-    fb_path2 = "../carmen/daily_numpys/CS2_CPOM/FB_interp_2018-2019_25km_20190422.npy",
+    fb_path1 = "../carmen/daily_numpys/AK_CPOM/FB_interp_2018-2019_25km_20190406.npy",
+    fb_path2 = "../carmen/daily_numpys/CS2_CPOM/FB_interp_2018-2019_25km_20190406.npy",
     verbose=False,
     minlat = -5000000.0/1000000, maxlat = 5000000.0/1000000,
     minlon = -5000000.0/1000000, maxlon = 5000000.0/1000000,
     parametrization = 0,
-    initial_cells = 10,
+    initial_cells = 100,
     iterations_number = 200000,
     verbosity = 5000,
     independent_chains = 4,
@@ -62,12 +59,6 @@ def main(
     iterations_between_tempering_attempts = 10,
     skipping = 100000,
     thinning = 5,
-    render_map=False,
-    render_matrix=False,
-    render_observations=False,
-    render_median = False,
-    render_stddev = False,
-    render_histogram = False
          ):
 
     if verbose:

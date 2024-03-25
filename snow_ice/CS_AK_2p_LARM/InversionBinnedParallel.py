@@ -2,17 +2,14 @@
 The objective of this program is to provide the entire pipeline from directly consuming 
 Carmen's interpolated data 
 
-This time including support for multi-threading.
 '''
 import numpy as np
 import pandas as pd
 import subprocess
 import matplotlib.pyplot as plt
 from itertools import chain
-from mpl_toolkits.basemap import Basemap
 import os
 import warnings
-import netCDF4 as nc
 
 
 
